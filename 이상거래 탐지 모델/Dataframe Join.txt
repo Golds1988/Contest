@@ -1,0 +1,15 @@
+d1=pd.merge(cp_df[cp_df['target']==0].groupby(['PAYR_SEQ'])[['target']].count(), cp_df[cp_df['target']==1].groupby(['PAYR_SEQ'])[['target']].count(), how='right',on='PAYR_SEQ')
+# d1.rename(columns = {'old_nm' : 'new_nm'), inplace = True)
+d1.fillna(0, inplace=True)
+d1.columns = ['normal', 'fraud']
+d1['rate'] = round(d1['fraud'] /  (d1['normal'] + d1['fraud']) *100,2)
+d1.head().sort_values(by='rate', ascending=False)
+
+
+	normal	fraud	rate
+PAYR_SEQ			
+19673	0.0	117	100.00
+49469	0.0	103	100.00
+521322	117.0	146	55.51
+1447968	331.0	205	38.25
+

@@ -1,0 +1,44 @@
+﻿order by req_dd asc, MM_LMT_AMT asc, REMD_LMT_AMT desc
+
+번호	변수	설명
+1	TRD_NO	거래번호
+2	REQ_DD	e요청일자
+3	CP_CD	e가맹점코드
+4	CP_NM	e가맹점명
+5	GODS_NM	e상품명
+6	PAYR_SEQ	e고객번호
+7	MPHN_NO	e휴대폰번호
+8	COMMC_CLF	통신사
+9	AC_PAY_AMT	거래금액
+10	NPAY_YN	미납여부
+11	PAY_MTHD_CD	지불수단코드(KT)
+12	MM_LMT_AMT	월한도금액
+13	REMD_LMT_AMT	잔여한도금액
+14	ARS_AUTHTI_YN	ARS인증여부
+15	PAYR_IP	e이용자IP
+16	SUB_IP_A	e이용자IP_A클래스
+17	SUB_IP_B	e이용자IP_B클래스
+18	SUB_IP_C	e이용자IP_C클래스
+19	SUB_IP_D	e이용자IP_D클래스
+20	FGPT	e브라우저지문
+21	AGE	나이
+22	GNDR	성별
+23	FOREI_YN	외국인여부
+24	SMS_RE_SND_CNT	SMS  재발송횟수
+25	AUTHTI_CLF_FLG	인증구분
+26	ACUM_RCPT_AMT	누적수납금액
+27	PAY_YM	거래년월
+28	SVC_CLF_NM	대분류(실물/디지털)
+29	CP_M_CLF_NM	중분류(엔터테인먼트/쇼핑몰/…)
+30	CP_S_CLF_NM	소분류(게임/로또/…)
+31	NPAY_AMT_24M	24개월  미납금액
+32	MAX_NPAY_CNT_24M	24개월  최장 미납회차
+33	TRD_CNT_6M	6개월 거래월 수
+34	REAL_TRD_CNT_6M	실물거래월수
+35	NIGHT_TRD_RT_6M	심야사용  거래 비중
+36	AVG_AMT_6M	6개월  평균 거래금액
+37	MAX_LMT_3M_RT	3개월내최고한도소진율
+38	NPAY_CNT_24M	24개월  남아있는 미납 개월 수
+39	NPAY_CNT_12MNTS	12개월  1회차 미납 개월 수
+40	NPAY_AMT_60M	60개월  미납금액
+41	target	타겟
